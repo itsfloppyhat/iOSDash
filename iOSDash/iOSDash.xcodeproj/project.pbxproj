@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311B05162A7DDCA700E6599A /* iOSDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B05152A7DDCA700E6599A /* iOSDashApp.swift */; };
+		311B05182A7DDCA700E6599A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B05172A7DDCA700E6599A /* ContentView.swift */; };
+		311B051A2A7DDCA800E6599A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B05192A7DDCA800E6599A /* Assets.xcassets */; };
+		311B051D2A7DDCA800E6599A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B051C2A7DDCA800E6599A /* Preview Assets.xcassets */; };
+		311B052B2A7DDCFD00E6599A /* iOSDashWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B052A2A7DDCFD00E6599A /* iOSDashWatchApp.swift */; };
+		311B052D2A7DDCFD00E6599A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B052C2A7DDCFD00E6599A /* ContentView.swift */; };
+		311B052F2A7DDCFE00E6599A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B052E2A7DDCFE00E6599A /* Assets.xcassets */; };
+		311B05322A7DDCFE00E6599A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311B05312A7DDCFE00E6599A /* Preview Assets.xcassets */; };
+		311B05352A7DDCFE00E6599A /* iOSDashWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 311B05282A7DDCFD00E6599A /* iOSDashWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		316506A02AD20B890030E456 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3165069F2AD20B890030E456 /* Realm */; };
+		316506A22AD20B890030E456 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 316506A12AD20B890030E456 /* RealmSwift */; };
+		316506A42AD21EA20030E456 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316506A32AD21EA20030E456 /* TasksView.swift */; };
+		316F8DDA2A7DE44B000645DB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DD92A7DE44B000645DB /* LoginView.swift */; };
+		316F8DDD2A7DEC02000645DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDC2A7DEC02000645DB /* User.swift */; };
+		316F8DDF2A7E405D000645DB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDE2A7E405D000645DB /* AuthenticationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311B05332A7DDCFE00E6599A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311B050A2A7DDCA700E6599A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311B05272A7DDCFD00E6599A;
+			remoteInfo = "iOSDashWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		311B05392A7DDCFE00E6599A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				311B05352A7DDCFE00E6599A /* iOSDashWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		311B05122A7DDCA700E6599A /* iOSDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311B05152A7DDCA700E6599A /* iOSDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDashApp.swift; sourceTree = "<group>"; };
+		311B05172A7DDCA700E6599A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		311B05192A7DDCA800E6599A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311B051C2A7DDCA800E6599A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		311B05232A7DDCB800E6599A /* iOSDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSDash.entitlements; sourceTree = "<group>"; };
+		311B05282A7DDCFD00E6599A /* iOSDashWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSDashWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		311B052A2A7DDCFD00E6599A /* iOSDashWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDashWatchApp.swift; sourceTree = "<group>"; };
+		311B052C2A7DDCFD00E6599A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		311B052E2A7DDCFE00E6599A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311B05312A7DDCFE00E6599A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		311B053A2A7DDD1300E6599A /* iOSDashWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOSDashWatch Watch App.entitlements"; sourceTree = "<group>"; };
+		316506A32AD21EA20030E456 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		316F8DD92A7DE44B000645DB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		316F8DDC2A7DEC02000645DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		316F8DDE2A7E405D000645DB /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311B050F2A7DDCA700E6599A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316506A22AD20B890030E456 /* RealmSwift in Frameworks */,
+				316506A02AD20B890030E456 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311B05252A7DDCFD00E6599A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311B05092A7DDCA700E6599A = {
+			isa = PBXGroup;
+			children = (
+				311B05142A7DDCA700E6599A /* iOSDash */,
+				311B05292A7DDCFD00E6599A /* iOSDashWatch Watch App */,
+				311B05132A7DDCA700E6599A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311B05132A7DDCA700E6599A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311B05122A7DDCA700E6599A /* iOSDash.app */,
+				311B05282A7DDCFD00E6599A /* iOSDashWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311B05142A7DDCA700E6599A /* iOSDash */ = {
+			isa = PBXGroup;
+			children = (
+				316F8DDB2A7DEBF1000645DB /* Models */,
+				316F8DD82A7DE43C000645DB /* Views */,
+				311B05232A7DDCB800E6599A /* iOSDash.entitlements */,
+				311B05152A7DDCA700E6599A /* iOSDashApp.swift */,
+				311B05172A7DDCA700E6599A /* ContentView.swift */,
+				311B05192A7DDCA800E6599A /* Assets.xcassets */,
+				311B051B2A7DDCA800E6599A /* Preview Content */,
+			);
+			path = iOSDash;
+			sourceTree = "<group>";
+		};
+		311B051B2A7DDCA800E6599A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				311B051C2A7DDCA800E6599A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		311B05292A7DDCFD00E6599A /* iOSDashWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				311B053A2A7DDD1300E6599A /* iOSDashWatch Watch App.entitlements */,
+				311B052A2A7DDCFD00E6599A /* iOSDashWatchApp.swift */,
+				311B052C2A7DDCFD00E6599A /* ContentView.swift */,
+				311B052E2A7DDCFE00E6599A /* Assets.xcassets */,
+				311B05302A7DDCFE00E6599A /* Preview Content */,
+			);
+			path = "iOSDashWatch Watch App";
+			sourceTree = "<group>";
+		};
+		311B05302A7DDCFE00E6599A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				311B05312A7DDCFE00E6599A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		316F8DD82A7DE43C000645DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				316F8DD92A7DE44B000645DB /* LoginView.swift */,
+				316F8DDE2A7E405D000645DB /* AuthenticationView.swift */,
+				316506A32AD21EA20030E456 /* TasksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		316F8DDB2A7DEBF1000645DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				316F8DDC2A7DEC02000645DB /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311B05112A7DDCA700E6599A /* iOSDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311B05202A7DDCA800E6599A /* Build configuration list for PBXNativeTarget "iOSDash" */;
+			buildPhases = (
+				311B050E2A7DDCA700E6599A /* Sources */,
+				311B050F2A7DDCA700E6599A /* Frameworks */,
+				311B05102A7DDCA700E6599A /* Resources */,
+				311B05392A7DDCFE00E6599A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311B05342A7DDCFE00E6599A /* PBXTargetDependency */,
+			);
+			name = iOSDash;
+			packageProductDependencies = (
+				3165069F2AD20B890030E456 /* Realm */,
+				316506A12AD20B890030E456 /* RealmSwift */,
+			);
+			productName = iOSDash;
+			productReference = 311B05122A7DDCA700E6599A /* iOSDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		311B05272A7DDCFD00E6599A /* iOSDashWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311B05362A7DDCFE00E6599A /* Build configuration list for PBXNativeTarget "iOSDashWatch Watch App" */;
+			buildPhases = (
+				311B05242A7DDCFD00E6599A /* Sources */,
+				311B05252A7DDCFD00E6599A /* Frameworks */,
+				311B05262A7DDCFD00E6599A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOSDashWatch Watch App";
+			productName = "iOSDashWatch Watch App";
+			productReference = 311B05282A7DDCFD00E6599A /* iOSDashWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311B050A2A7DDCA700E6599A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					311B05112A7DDCA700E6599A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					311B05272A7DDCFD00E6599A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 311B050D2A7DDCA700E6599A /* Build configuration list for PBXProject "iOSDash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311B05092A7DDCA700E6599A;
+			packageReferences = (
+				3165069E2AD1F7380030E456 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 311B05132A7DDCA700E6599A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311B05112A7DDCA700E6599A /* iOSDash */,
+				311B05272A7DDCFD00E6599A /* iOSDashWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311B05102A7DDCA700E6599A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311B051D2A7DDCA800E6599A /* Preview Assets.xcassets in Resources */,
+				311B051A2A7DDCA800E6599A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311B05262A7DDCFD00E6599A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311B05322A7DDCFE00E6599A /* Preview Assets.xcassets in Resources */,
+				311B052F2A7DDCFE00E6599A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311B050E2A7DDCA700E6599A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316F8DDD2A7DEC02000645DB /* User.swift in Sources */,
+				316506A42AD21EA20030E456 /* TasksView.swift in Sources */,
+				316F8DDA2A7DE44B000645DB /* LoginView.swift in Sources */,
+				311B05182A7DDCA700E6599A /* ContentView.swift in Sources */,
+				311B05162A7DDCA700E6599A /* iOSDashApp.swift in Sources */,
+				316F8DDF2A7E405D000645DB /* AuthenticationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311B05242A7DDCFD00E6599A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311B052D2A7DDCFD00E6599A /* ContentView.swift in Sources */,
+				311B052B2A7DDCFD00E6599A /* iOSDashWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311B05342A7DDCFE00E6599A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311B05272A7DDCFD00E6599A /* iOSDashWatch Watch App */;
+			targetProxy = 311B05332A7DDCFE00E6599A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		311B051E2A7DDCA800E6599A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		311B051F2A7DDCA800E6599A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311B05212A7DDCA800E6599A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSDash/iOSDash.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSDash/Preview Content\"";
+				DEVELOPMENT_TEAM = FYWW2S89N3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		311B05222A7DDCA800E6599A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSDash/iOSDash.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSDash/Preview Content\"";
+				DEVELOPMENT_TEAM = FYWW2S89N3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		311B05372A7DDCFE00E6599A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOSDashWatch Watch App/iOSDashWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSDashWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FYWW2S89N3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.itsfloppyhat.iOSDash;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		311B05382A7DDCFE00E6599A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOSDashWatch Watch App/iOSDashWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSDashWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FYWW2S89N3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.itsfloppyhat.iOSDash;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311B050D2A7DDCA700E6599A /* Build configuration list for PBXProject "iOSDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311B051E2A7DDCA800E6599A /* Debug */,
+				311B051F2A7DDCA800E6599A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311B05202A7DDCA800E6599A /* Build configuration list for PBXNativeTarget "iOSDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311B05212A7DDCA800E6599A /* Debug */,
+				311B05222A7DDCA800E6599A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311B05362A7DDCFE00E6599A /* Build configuration list for PBXNativeTarget "iOSDashWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311B05372A7DDCFE00E6599A /* Debug */,
+				311B05382A7DDCFE00E6599A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3165069E2AD1F7380030E456 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3165069F2AD20B890030E456 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3165069E2AD1F7380030E456 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		316506A12AD20B890030E456 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3165069E2AD1F7380030E456 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 311B050A2A7DDCA700E6599A /* Project object */;
+}
