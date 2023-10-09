@@ -10,10 +10,14 @@ import SwiftUI
 @main
 struct iOSDashApp: App {
     @StateObject var user = User()
+    @StateObject var manager = HealthManager()
+    
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
-                .environmentObject(user)
+            StartRun()
+                .environmentObject(manager)
+//            AuthenticationView()
+//                .environmentObject(user)
         }
     }
 }

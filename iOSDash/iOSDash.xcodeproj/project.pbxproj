@@ -22,6 +22,10 @@
 		316F8DDA2A7DE44B000645DB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DD92A7DE44B000645DB /* LoginView.swift */; };
 		316F8DDD2A7DEC02000645DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDC2A7DEC02000645DB /* User.swift */; };
 		316F8DDF2A7E405D000645DB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDE2A7E405D000645DB /* AuthenticationView.swift */; };
+		71874BA62AD35FC0007C0B92 /* StartRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BA52AD35FC0007C0B92 /* StartRun.swift */; };
+		71874BAD2AD36988007C0B92 /* ActiveRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BAA2AD3691B007C0B92 /* ActiveRunView.swift */; };
+		71874BAE2AD36989007C0B92 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BA72AD361FE007C0B92 /* HealthManager.swift */; };
+		71874BB02AD382CD007C0B92 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		316F8DD92A7DE44B000645DB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		316F8DDC2A7DEC02000645DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		316F8DDE2A7E405D000645DB /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		71874BA52AD35FC0007C0B92 /* StartRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartRun.swift; sourceTree = "<group>"; };
+		71874BA72AD361FE007C0B92 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		71874BAA2AD3691B007C0B92 /* ActiveRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRunView.swift; sourceTree = "<group>"; };
+		71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,9 @@
 				316F8DD82A7DE43C000645DB /* Views */,
 				311B05232A7DDCB800E6599A /* iOSDash.entitlements */,
 				311B05152A7DDCA700E6599A /* iOSDashApp.swift */,
+				71874BA52AD35FC0007C0B92 /* StartRun.swift */,
+				71874BAA2AD3691B007C0B92 /* ActiveRunView.swift */,
+				71874BA72AD361FE007C0B92 /* HealthManager.swift */,
 				311B05172A7DDCA700E6599A /* ContentView.swift */,
 				311B05192A7DDCA800E6599A /* Assets.xcassets */,
 				311B051B2A7DDCA800E6599A /* Preview Content */,
@@ -133,6 +144,7 @@
 				311B053A2A7DDD1300E6599A /* iOSDashWatch Watch App.entitlements */,
 				311B052A2A7DDCFD00E6599A /* iOSDashWatchApp.swift */,
 				311B052C2A7DDCFD00E6599A /* ContentView.swift */,
+				71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */,
 				311B052E2A7DDCFE00E6599A /* Assets.xcassets */,
 				311B05302A7DDCFE00E6599A /* Preview Content */,
 			);
@@ -276,8 +288,11 @@
 			files = (
 				316F8DDD2A7DEC02000645DB /* User.swift in Sources */,
 				316506A42AD21EA20030E456 /* TasksView.swift in Sources */,
+				71874BAE2AD36989007C0B92 /* HealthManager.swift in Sources */,
+				71874BAD2AD36988007C0B92 /* ActiveRunView.swift in Sources */,
 				316F8DDA2A7DE44B000645DB /* LoginView.swift in Sources */,
 				311B05182A7DDCA700E6599A /* ContentView.swift in Sources */,
+				71874BA62AD35FC0007C0B92 /* StartRun.swift in Sources */,
 				311B05162A7DDCA700E6599A /* iOSDashApp.swift in Sources */,
 				316F8DDF2A7E405D000645DB /* AuthenticationView.swift in Sources */,
 			);
@@ -289,6 +304,7 @@
 			files = (
 				311B052D2A7DDCFD00E6599A /* ContentView.swift in Sources */,
 				311B052B2A7DDCFD00E6599A /* iOSDashWatchApp.swift in Sources */,
+				71874BB02AD382CD007C0B92 /* WorkoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +443,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDash/Preview Content\"";
-				DEVELOPMENT_TEAM = FYWW2S89N3;
+				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy features of the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,9 +476,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDash/Preview Content\"";
-				DEVELOPMENT_TEAM = FYWW2S89N3;
+				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy features of the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,7 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDashWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = FYWW2S89N3;
+				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;
@@ -521,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSDashWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = FYWW2S89N3;
+				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;

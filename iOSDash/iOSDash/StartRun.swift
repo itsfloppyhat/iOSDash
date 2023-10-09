@@ -8,11 +8,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartRun: View {
     @State private var goalTime: Int = 0
     @State private var distance: Double = 0.0
     @State private var effortValues = ["Easy Run", "Break A Sweat", "Race Pace"]
     @State private var effort = "Easy Run"
+    
+    @EnvironmentObject var manager: HealthManager
+    
+    @State private var showActiveRunView: Bool = false
     
     var body: some View {
         NavigationView {
@@ -94,7 +98,8 @@ struct ContentView: View {
                 ToolbarItemGroup(placement: .bottomBar) {
                     Spacer()
                     Button(action: {
-                        // action
+                        manager.startWorkout()
+                        showActiveRunView = true
                     }) {
                         Text("GO")
                             .foregroundColor(.white)
@@ -107,12 +112,15 @@ struct ContentView: View {
                 }
             }
             .preferredColorScheme(.dark)
+            .navigationDestination(isPresented: $showActiveRunView) {
+                ActiveRunView()
+            }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StartRun_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StartRun()
     }
 }
