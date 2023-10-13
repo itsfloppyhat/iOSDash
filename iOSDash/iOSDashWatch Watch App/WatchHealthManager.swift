@@ -154,10 +154,12 @@ class WatchHealthManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     
     private func stopQueries() {
-        healthStore.stop(distanceQuery!)
-        healthStore.stop(heartRateQuery!)
-        distanceQuery = nil
-        heartRateQuery = nil
+        if inActiveWorkout == true {
+            healthStore.stop(distanceQuery!)
+            healthStore.stop(heartRateQuery!)
+            distanceQuery = nil
+            heartRateQuery = nil
+        }
     }
     
     func sendDataToiPhone() {
