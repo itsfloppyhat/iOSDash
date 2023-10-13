@@ -19,7 +19,7 @@ struct StartRun: View {
     @State private var showActiveRunView: Bool = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color(red: 20/255, green: 3/255, blue: 3/255)
                     .edgesIgnoringSafeArea(.all)
@@ -98,7 +98,6 @@ struct StartRun: View {
                 ToolbarItemGroup(placement: .bottomBar) {
                     Spacer()
                     Button(action: {
-                        manager.startWorkout()
                         showActiveRunView = true
                     }) {
                         Text("GO")

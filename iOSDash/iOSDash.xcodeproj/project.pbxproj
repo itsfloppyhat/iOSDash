@@ -22,10 +22,11 @@
 		316F8DDA2A7DE44B000645DB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DD92A7DE44B000645DB /* LoginView.swift */; };
 		316F8DDD2A7DEC02000645DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDC2A7DEC02000645DB /* User.swift */; };
 		316F8DDF2A7E405D000645DB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F8DDE2A7E405D000645DB /* AuthenticationView.swift */; };
+		715862152AD8BE10006795B0 /* WatchHealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715862142AD8BE10006795B0 /* WatchHealthManager.swift */; };
+		715862172AD8C07F006795B0 /* WatchActiveRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715862162AD8C07F006795B0 /* WatchActiveRunView.swift */; };
 		71874BA62AD35FC0007C0B92 /* StartRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BA52AD35FC0007C0B92 /* StartRun.swift */; };
 		71874BAD2AD36988007C0B92 /* ActiveRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BAA2AD3691B007C0B92 /* ActiveRunView.swift */; };
 		71874BAE2AD36989007C0B92 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BA72AD361FE007C0B92 /* HealthManager.swift */; };
-		71874BB02AD382CD007C0B92 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +70,11 @@
 		316F8DD92A7DE44B000645DB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		316F8DDC2A7DEC02000645DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		316F8DDE2A7E405D000645DB /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		715862142AD8BE10006795B0 /* WatchHealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHealthManager.swift; sourceTree = "<group>"; };
+		715862162AD8C07F006795B0 /* WatchActiveRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchActiveRunView.swift; sourceTree = "<group>"; };
 		71874BA52AD35FC0007C0B92 /* StartRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartRun.swift; sourceTree = "<group>"; };
 		71874BA72AD361FE007C0B92 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		71874BAA2AD3691B007C0B92 /* ActiveRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRunView.swift; sourceTree = "<group>"; };
-		71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,8 @@
 				311B053A2A7DDD1300E6599A /* iOSDashWatch Watch App.entitlements */,
 				311B052A2A7DDCFD00E6599A /* iOSDashWatchApp.swift */,
 				311B052C2A7DDCFD00E6599A /* ContentView.swift */,
-				71874BAF2AD382CD007C0B92 /* WorkoutManager.swift */,
+				715862162AD8C07F006795B0 /* WatchActiveRunView.swift */,
+				715862142AD8BE10006795B0 /* WatchHealthManager.swift */,
 				311B052E2A7DDCFE00E6599A /* Assets.xcassets */,
 				311B05302A7DDCFE00E6599A /* Preview Content */,
 			);
@@ -302,9 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715862152AD8BE10006795B0 /* WatchHealthManager.swift in Sources */,
 				311B052D2A7DDCFD00E6599A /* ContentView.swift in Sources */,
+				715862172AD8C07F006795B0 /* WatchActiveRunView.swift in Sources */,
 				311B052B2A7DDCFD00E6599A /* iOSDashWatchApp.swift in Sources */,
-				71874BB02AD382CD007C0B92 /* WorkoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +451,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy features of the application";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy features of the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellelewis.floppydash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,6 +485,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy features of the application";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy features of the application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -491,7 +497,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellelewis.floppydash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -512,14 +518,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to health data for purposes of the app.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to health data for purposes of the app.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.itsfloppyhat.iOSDash;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.daniellelewis.floppydash;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellelewis.floppydash.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -543,14 +551,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSDashWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to health data for purposes of the app.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to health data for purposes of the app.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.itsfloppyhat.iOSDash;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.daniellelewis.floppydash;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsfloppyhat.iOSDash.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellelewis.floppydash.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

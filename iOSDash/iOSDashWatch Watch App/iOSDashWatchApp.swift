@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct iOSDashWatch_Watch_AppApp: App {
+    @StateObject private var manager = WatchHealthManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager)
         }
     }
 }

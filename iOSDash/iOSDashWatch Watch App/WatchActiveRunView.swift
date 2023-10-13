@@ -1,26 +1,24 @@
 //
-//  ActiveRunView.swift
-//  iOSDash
+//  WatchActiveRunView.swift
+//  iOSDashWatch Watch App
 //
-//  Created by Danielle Lewis on 10/8/23.
+//  Created by Danielle Lewis on 10/12/23.
 //
 
 import SwiftUI
 
-struct ActiveRunView: View {
-    @EnvironmentObject var manager: HealthManager
+struct WatchActiveRunView: View {
+    @EnvironmentObject var manager: WatchHealthManager
     
     var body: some View {
         VStack{
             HStack{
                 Text("❤️")
-                    .font(.system(size: 50))
                 Spacer()
             }
             HStack{
                 Text("\(manager.heartRate)")
                     .fontWeight(.regular)
-                    .font(.system(size: 70))
                 
                 Text("BPM")
                     .font(.headline)
@@ -35,7 +33,6 @@ struct ActiveRunView: View {
             HStack {
                 Text(String(format: "%.2f", manager.distance))
                     .fontWeight(.regular)
-                    .font(.system(size: 70))
 
                 
                 Spacer()
@@ -50,11 +47,17 @@ struct ActiveRunView: View {
                 Spacer()
             }
             
+            Button {
+                manager.endWorkout()
+            } label: {
+                Text("End Workout")
+            }
+            
         }
     }
-    
 }
 
+
 #Preview {
-    ActiveRunView()
+    WatchActiveRunView()
 }
